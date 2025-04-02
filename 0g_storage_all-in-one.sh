@@ -105,7 +105,10 @@ select_rpc() {
     echo "1. https://evmrpc-testnet.0g.ai"
     echo "2. https://16600.rpc.thirdweb.com"
     echo "3. https://og-testnet-evm.itrocket.net:443"
-    read -p "Enter your choice (1-3): " rpc_choice
+    echo "4. https://rpc.ankr.com/0g_newton"
+    echo "5. https://0g-rpc.murphynode.net"
+    echo "6. https://0g-evm-rpc.murphynode.net"
+    read -p "Enter your choice (1-6): " rpc_choice
     case $rpc_choice in
         1) rpc="https://evmrpc-testnet.0g.ai" ;;
         2) rpc="https://16600.rpc.thirdweb.com" ;;
